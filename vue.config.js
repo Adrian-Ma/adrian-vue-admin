@@ -23,6 +23,7 @@ module.exports = {
             args[0].chunksSortMode = "none";
             return args;
         });
+        config.resolve.extensions ['.js', '.json', '.vue'],  // 自动添加文件名后缀
         config.resolve.alias // 添加别名
             .set('@', resolve('src'))
             .set('@assets', resolve('src/assets'))
